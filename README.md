@@ -1,2 +1,2 @@
 ## Autor
--Valeria :D
+Claudia Quevedo
