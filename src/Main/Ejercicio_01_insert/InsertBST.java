@@ -1,5 +1,5 @@
-package main.Ejercicio_01_insert;
-import main.Materia.Models.*;
+package Main.Ejercicio_01_insert;
+import Main.Materia.Models.Node;
 public class InsertBST {
 //Metodo para insertar un valor en el BST
 // [5, 3, 7, 2, 4, 6, 8]

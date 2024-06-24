@@ -1,4 +1,4 @@
-package main.Ejercicio_04_depth;
+package Main.Ejercicio_04_depth;
 import main.Materia.Models.*;
 
 public class Depth {
