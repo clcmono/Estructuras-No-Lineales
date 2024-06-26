@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import main.Ejercicio_03_listLevels.ListLevels;
-import main.Materia.Models.Node;
+import Main.Ejercicio_03_listLevels.ListLevels;
+import Main.Materia.Models.Node;
 public class ListLevelsTest {
 
     @Test
@@ -19,7 +19,7 @@ public class ListLevelsTest {
         root.getRight().setLeft(new Node(6));
         root.getRight().setRight(new Node(9));
 
-        List<List<Node>> levels = listLevels.listLevels(root);
+        List<List<Node>> levels = listLevels.listnivelesList(root);
 
         assertEquals(3, levels.size());
         assertEquals(4, levels.get(0).get(0).getValue());

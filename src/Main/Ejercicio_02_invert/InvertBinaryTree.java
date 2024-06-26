@@ -1,5 +1,5 @@
 package Main.Ejercicio_02_invert;
-import main.Materia.Models.Node;
+import Main.Materia.Models.Node;
 
 public class InvertBinaryTree {
     public Node invertTree(Node root){
@@ -7,10 +7,10 @@ public class InvertBinaryTree {
         if(root == null){
            return null;
        }
-       Node left = invertTree(root.left);
-       Node right = invertTree(root.right);
-       root.left = right;
-       root.right = left;
+       Node left = invertTree(root.getLeft());
+       Node right = invertTree(root.getRight());
+       left = right;
+       right = left;
 
        return root;
     }

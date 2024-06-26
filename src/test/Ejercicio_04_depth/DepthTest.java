@@ -3,8 +3,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.Ejercicio_04_depth.Depth;
-import main.Materia.Models.Node;
+import Main.Ejercicio_04_depth.Depth;
+import Main.Materia.Models.Node;
 public class DepthTest {
     @Test
     public void maxDepthTest() {

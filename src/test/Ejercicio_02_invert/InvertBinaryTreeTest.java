@@ -3,8 +3,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.Ejercicio_02_invert.InvertBinaryTree;
-import main.Materia.Models.Node;
+import Main.Ejercicio_02_invert.InvertBinaryTree;
+import Main.Materia.Models.Node;
 public class InvertBinaryTreeTest {
     @Test
     public void invertBinaryTreeTest() {

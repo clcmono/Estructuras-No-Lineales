@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
 
-import main.Ejercicio_01_insert.InsertBST;
-import main.Materia.Models.Node;
+import Main.Ejercicio_01_insert.InsertBST;
+import Main.Materia.Models.Node;
 
 public class InsertBSTTest {
     @Test

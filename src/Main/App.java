@@ -1,13 +1,13 @@
-package main;
-
-import main.Ejercicio_02_invert.InvertBinaryTree;
-import main.Materia.Controllers.ArbolBinario;
-import main.Materia.Models.Node;
+package Main;
+//import Main.Ejercicio_02_invert.InvertBinaryTree;
+import Main.Materia.Controllers.AVLTree;
+//import Main.Materia.Controllers.ArbolBinario;
+//import Main.Materia.Models.Node;
 
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
+
         // ArbolBinario arbolBinario = new ArbolBinario();
         // Node nodeRaiz = new Node(1);
         // nodeRaiz.setLeft(new Node(2));
@@ -41,17 +41,24 @@ public class App {
         // System.out.println("IN order Recursivo");
         // arbolBinario.InOrderRecursivo(nodeRaiz);
 
-        InvertBinaryTree invertido = new InvertBinaryTree();
-        Node nodeRaiz2 = new Node(4);
-        nodeRaiz2.setLeft(new Node(2));
-        nodeRaiz2.setRight(new Node(7));
-        nodeRaiz2.getLeft().setLeft(new Node(1));
-        nodeRaiz2.getLeft().setRight(new Node(3));
-        nodeRaiz2.getRight().setLeft(new Node(6));
-        nodeRaiz2.getRight().setRight(new Node(9));
-        
-        System.out.println();
-        System.out.print(invertido.invertTree(nodeRaiz2));
+        //InvertBinaryTree invertido = new InvertBinaryTree();
+        // Node nodeRaiz2 = new Node(4);
+        // nodeRaiz2.setLeft(new Node(2));
+        // nodeRaiz2.setRight(new Node(7));
+        // nodeRaiz2.getLeft().setLeft(new Node(1));
+        // nodeRaiz2.getLeft().setRight(new Node(3));
+        // nodeRaiz2.getRight().setLeft(new Node(6));
+        // nodeRaiz2.getRight().setRight(new Node(9));
+
+        // System.out.println();
+        // System.out.print(invertido.invertTree(nodeRaiz2));
+        AVLTree tree = new AVLTree();
+
+        int[] values = { 10, 20, 15, 24, 9, 8, 21, 23, 50, 25 };
+
+        for (int value : values) {
+            tree.insert(value);
+        }
 
     }
 }
