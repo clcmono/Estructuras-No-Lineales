@@ -1,12 +1,15 @@
 package Main;
 //import Main.Ejercicio_02_invert.InvertBinaryTree;
-import Main.Materia.Controllers.AVLTree;
+//import Main.Materia.Controllers.AVLTree;
 //import Main.Materia.Controllers.ArbolBinario;
 //import Main.Materia.Models.Node;
 
+import Main.Materia.Controllers.Graph;
+import Main.Materia.Models.NodeGraph;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        runGraph();
 
         // ArbolBinario arbolBinario = new ArbolBinario();
         // Node nodeRaiz = new Node(1);
@@ -52,13 +55,34 @@ public class App {
 
         // System.out.println();
         // System.out.print(invertido.invertTree(nodeRaiz2));
-        AVLTree tree = new AVLTree();
+        // AVLTree tree = new AVLTree();
 
-        int[] values = { 10, 20, 15, 24, 9, 8, 21, 23, 50, 25 };
+        // int[] values = { 10, 20, 15, 24, 9, 8, 21, 23, 50, 25 };
 
-        for (int value : values) {
-            tree.insert(value);
-        }
+        // for (int value : values) {
+        //     tree.insert(value);
+        // }
+
+    }
+
+    private static void runGraph() {
+       Graph graph = new Graph();
+    
+    NodeGraph node1 = graph.addNode(1);
+    NodeGraph node2=  graph.addNode(2);
+    NodeGraph node3 =  graph.addNode(3);
+    NodeGraph node4 =  graph.addNode(4);
+    NodeGraph node5 =  graph.addNode(5);
+
+    graph.addEdge(node1, node2);
+    graph.addEdge(node1, node3);
+    graph.addEdge(node2, node4);
+    graph.addEdge(node4, node5);
+
+     graph.printGraph();
+
+
 
     }
 }
+  
