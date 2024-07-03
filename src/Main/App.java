@@ -1,15 +1,15 @@
 package Main;
 //import Main.Ejercicio_02_invert.InvertBinaryTree;
-//import Main.Materia.Controllers.AVLTree;
+import Main.Materia.Controllers.*;
 //import Main.Materia.Controllers.ArbolBinario;
 //import Main.Materia.Models.Node;
-
-import Main.Materia.Controllers.Graph;
-import Main.Materia.Models.NodeGraph;
+//import Main.Materia.Controllers.Graph;
+//import Main.Materia.Models.NodeGraph;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        runGraph();
+       // runGraph();
+       runSets();
 
         // ArbolBinario arbolBinario = new ArbolBinario();
         // Node nodeRaiz = new Node(1);
@@ -64,25 +64,34 @@ public class App {
         // }
 
     }
-
-    private static void runGraph() {
-       Graph graph = new Graph();
-    
-    NodeGraph node1 = graph.addNode(1);
-    NodeGraph node2=  graph.addNode(2);
-    NodeGraph node3 =  graph.addNode(3);
-    NodeGraph node4 =  graph.addNode(4);
-    NodeGraph node5 =  graph.addNode(5);
-
-    graph.addEdge(node1, node2);
-    graph.addEdge(node1, node3);
-    graph.addEdge(node2, node4);
-    graph.addEdge(node4, node5);
-
-     graph.printGraph();
-
+    public static void runSets(){
+        Sets variableClase = new Sets();
+        variableClase.construirHashSet();
+        variableClase.construirLinkedHashSet();
+        variableClase.construirTreeSet();
+        variableClase.constuirTreetConComparador();
 
 
     }
+
+    // private static void runGraph() {
+    //    Graph graph = new Graph();
+    
+    // NodeGraph node1 = graph.addNode(1);
+    // NodeGraph node2=  graph.addNode(2);
+    // NodeGraph node3 =  graph.addNode(3);
+    // NodeGraph node4 =  graph.addNode(4);
+    // NodeGraph node5 =  graph.addNode(5);
+
+    // graph.addEdge(node1, node2);
+    // graph.addEdge(node1, node3);
+    // graph.addEdge(node2, node4);
+    // graph.addEdge(node4, node5);
+
+    //  graph.printGraph();
+
+
+
+    
 }
   
